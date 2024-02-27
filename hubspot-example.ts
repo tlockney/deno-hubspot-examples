@@ -1,3 +1,5 @@
+// Need to set the 'DENO_TLS_CA_STORE' env var to 'system' to ensure we don't get a
+// TLS error going through any corporate proxies.
 Deno.env.set("DENO_TLS_CA_STORE","system");
 
 import { Client } from "npm:@hubspot/api-client";
