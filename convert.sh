@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-jupyter-nbconvert hubspot-example.ipynb --to script
+for file in *.ipynb; do
+	jupyter-nbconvert ${file} --to script
+done
